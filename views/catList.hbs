@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+  <h1>Cats of Ironhack</h1>
+
+  <table class="table table-hover">
+    <thead class="thead-primary">
+      <tr>
+        <th>Nome</th>
+        <th>Raca</th>
+        <th>Cor</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cats}}
+
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.breed}}</td>
+          <td>{{this.color}}</td>
+          <td>{{this.age}}</td>
+        </tr>
+
+      {{/each }}
+    </tbody>
+  </table>
+  </div>
+
+</body>
+</html>
